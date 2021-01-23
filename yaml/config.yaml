@@ -1,0 +1,6 @@
+hoge: "hoge"
+roles:
+  - "roles/hoge"
+  - "roles/fuga"
+  - "roles/foo"
+  - "roles/bar"
