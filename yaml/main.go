@@ -27,12 +27,12 @@ func main() {
 	pretty.Print("--- yamldata:\n%# v\n\n", yamldata)
 
 	fmt.Println()
-	fmt.Println(yamldata["hoge"].(string))
+	//fmt.Println(yamldata["hoge"].(string))
 	roles := []string{}
-  for _, value := range yamldata["roles"].([]interface {}) {
+  for _, value := range yamldata["a"].(map[interface {}]interface {})["b"].(map[interface {}]interface {})["roles"].([]interface {}) {
 		roles = append(roles, value.(string))
 	}
-	fmt.Println(yamldata["roles"])
+	//fmt.Println(yamldata["roles"])
 	fmt.Println(roles)
 
 }
